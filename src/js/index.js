@@ -4,7 +4,6 @@ const CLASENAME = 'timestamp_image';
 export default class Index {
     constructor(imageDom) {
         this.imageDom = imageDom;
-        console.log(this.imageDom);
         this.src = this.imageDom.src;
         this.setEvent();
     }
