@@ -1,0 +1,6 @@
+concat:
+  -
+    src:
+      - src/js/index.js
+      - sp/js/sample.js
+    out: all.js

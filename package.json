@@ -4,17 +4,47 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "./src/js/**/*.js": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ],
+    "./src/css/**/*.css": [
+      "stylelint --fix",
+      "git add"
+    ]
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-eslint": "^8.2.3",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "bluebird": "^3.5.1",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
     "gulp-eslint": "^4.0.2",
     "gulp-load-plugins": "^1.5.0",
+    "gulp-postcss": "^7.0.1",
     "gulp-prettier": "^2.0.0",
-    "run-sequence": "^2.2.1"
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylelint": "^7.0.0",
+    "gulp-uglify": "^3.0.0",
+    "husky": "^0.14.3",
+    "js-yaml": "^3.11.0",
+    "lint-staged": "^7.1.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-simple-vars": "^4.1.0",
+    "precommit": "^1.2.2",
+    "run-sequence": "^2.2.1",
+    "stylelint": "^9.2.1",
+    "stylelint-config-standard": "^18.2.0"
   }
 }
