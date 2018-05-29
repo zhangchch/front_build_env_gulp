@@ -1,0 +1,16 @@
+{
+    "extends": "stylelint-config-standard",
+    "rules": {
+        "declaration-block-trailing-semicolon": null,
+        "indentation": 4,
+        "block-no-empty": null,
+        "max-empty-lines": 1,
+        "selector-list-comma-newline-after": never-multi-line,
+        "at-rule-no-unknown": null,
+        "declaration-colon-space-after": null,
+        "no-duplicate-selectors" : null,
+        "no-descending-specificity": null,
+        "selector-pseudo-element-colon-notation": null,
+        "no-empty-source": null
+    }
+}
